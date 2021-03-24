@@ -1,0 +1,48 @@
+.color-blue.fw-normal{
+    color: blue;
+    font-weight: normal;
+}
+
+.color-red .fw-bold{
+    color: red;
+    font-weight: bold;
+}
+
+li:first-child{
+    color: green;
+}
+
+li:last-child{
+    color: orange;
+}
+
+li:nth-child(6) {   /* li:nth-child(odd) li tek sayıları yapar.  li:nth-child(even) çift sayıları yapar.  */
+    color:darkmagenta;
+    border-style: solid;
+    border-radius: 20%;
+    margin-right: 85%;
+}
+
+#birinci>li:nth-child(odd) {  /* id="birinci" içindeki li'ler tek olanlar kırmızı renk olacak. */
+    color:red;  
+}   
+
+#ikinci>li:nth-child(3n) {  /* id="ikinci" içindeki li'ler 3n katı olanlar rgb(21, 199, 184) renk olacak. */
+    color:rgb(21, 199, 184);  
+}   
+
+div[title~="isim"] {      /*Burada ~= ifadesi ile title özelliği sadece "isim" içeren  divlere eriştik. isimler div'i olmuyor*/
+    color: orange;
+}
+                           /* https://www.patika.dev/egitimler/ogren/css/css-seciciler-ile-calismak,-i%CC%87stedigimiz-html-etiket-yapisina-ozelliklik-ekleyebilmek    */            
+a[href ^= "https"] {        /*  Burada ^= ifadesi ile href özelliği "https" ile başlayan a etiketlerine eriştik.      */
+    color: palegreen;     /* ""  *= ""  Bunu kullansaydık içinde https olanlar rengi palegreen olacaktı.       */
+}                           /* Burada $= ifadesi ile href özelliği sonunda "https" içeren divlere eriştik. */
+
+ul + p {
+    color:green;
+}
+
+a#google:hover {      /* :link  Daha önce tarayıcıda açılmamış linke CSS uygular. */
+    color: red;    /* a.test:hover   Seçici ile işaretlenen etiketin üzerine mouse ile gelindiğinde CSS uygalanır ve mouse üzerinde değilken etki kaybolur. */   
+}

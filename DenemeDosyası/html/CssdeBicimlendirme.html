@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style-type: "\1F44D"; /* thumbs up sign */
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Lorem, ipsum.</li>
+        <li>Id, beatae.</li>
+        <li>Fugiat, quam!</li>
+        <br>
+        <p id="demo">JavaScript can change HTML content.</p>
+        <button type="button"
+        onclick='document.getElementById("demo").innerHTML="Hello Javascript!"'>Click me! <!-- id:demo olanın (innerHTML)içeriğini "Hello Javascript!" yap demek burası.  -->
+        </button>
+        <br>
+        <script>
+            var x=1, y=2;
+            toplam=x+y;
+            alert(toplam); // 3 yazdı.  
+            
+            document.write(toplam);
+        </script>
+    </ul>
+</body>
+</html>

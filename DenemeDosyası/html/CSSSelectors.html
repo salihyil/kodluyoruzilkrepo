@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/DenemeDosyası/css/Selector.css">
+</head>
+<body>
+    <h1 class="color-blue fw-normal "> Css'de selector denemeleri. (.class1.class2)</h1> <!-- .color-blue.fw-normal -->
+
+
+    <ul class="color-red">
+        <li class="fw-bold">.class1 .class2 </li> <!-- .color-red .fw-bold  arada boşluk var. -->
+    </ul>
+
+    <p style="font-size: 25px;" class="color-red" >Lorem ipsum dolor <span class="fw-bold"> sit.</span> </p> <!-- .color-red .fw-bold  sit yazan kısım kırmızı kalın oldu. -->
+
+    <div></div> <!-- div+p -->
+    <p></p>
+    <hr>    
+    <ol>
+        <li>Lorem ipsum dolor sit.</li> <!-- li:first-child --> 
+        <li>Ipsum adipisci ipsam animi.</li>
+        <li>Accusamus ex facere quisquam.</li>
+        <li>Accusamus ex facere quisquam.</li>
+        <li>Accusamus ex facere quisquam.</li> 
+        <li>Accusamus ex facere quisquam.</li> <!-- li:nth-child(6) bu satırı değişiklik yaptık. -->
+        <li>Accusamus ex facere quisquam.</li> 
+        <li>Accusamus ex facere quisquam.</li> 
+        <li>Accusamus ex facere quisquam.</li> <!-- li:last-child -->
+
+    </ol>
+    <hr>
+    <ol id="birinci"> 
+        <li>Lorem ipsum dolor sit amet consectetur.</li>
+        <li>Necessitatibus odit ab sapiente voluptatem dignissimos!</li>
+        <li>Doloribus, repellendus quidem. Inventore, minima rerum.</li>
+        <li>Officia quibusdam totam similique animi illo?</li>
+        <li>Incidunt beatae veniam adipisci quisquam voluptate?</li>
+        <li>Incidunt beatae veniam adipisci quisquam voluptate?</li> 
+        <li>Incidunt beatae veniam adipisci quisquam voluptate?</li>
+    </ol>
+    <hr>
+    <ol id="ikinci"> 
+        <li>Lorem ipsum dolor sit amet consectetur.</li>
+        <li>Necessitatibus odit ab sapiente voluptatem dignissimos!</li>
+        <li>Doloribus, repellendus quidem. Inventore, minima rerum.</li>
+        <li>Officia quibusdam totam similique animi illo?</li>
+        <li>Incidunt beatae veniam adipisci quisquam voluptate?</li>
+        <li>Incidunt beatae veniam adipisci quisquam voluptate?</li> 
+        <li>Incidunt beatae veniam adipisci quisquam voluptate?</li>
+    </ol>
+    <hr>
+
+    <div title="isim">Lorem, ipsum dolor.</div>
+    <div title="isimler">Lorem, ipsum dolor.</div>
+    <div title="isim ve şehirler">Lorem, ipsum dolor.</div><br>
+    <hr>
+    <a href="https://www.google.com/">google</a> <br>
+    <a href="https://github.com/">github</a> <br>
+    <a href="http://github.com/">github</a><br>
+    <hr>
+    <div>
+        <p>Lorem, ipsum.</p>
+        <ul>
+          <li>
+            <p>Lorem, ipsum.</p>
+          </li>
+        </ul>
+        <p>Bu p etiketinin yazı rengi yeşil</p>    <!-- ul + p {color: green;} -->
+    </div>
+
+    <a id="google" href="https://www.google.com/">Google</a>  <!-- a#google:hover ile üzerine gelince cssdeki kod ile kırmızı oluyoe. -->
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Oluşturma</title>
+</head>
+<body>
+    <h1>Üye Kayıt Formu</h1>
+    <form name="kayit" action="kayit.php" method="POST"> <!-- action: verileri oraya yollar. mrethod="GET": verileri görürüz. Post ile görmeyiz. -->
+        <table border="1">
+            <tr>
+                <td>Ad Soyad:</td>
+                <td><input type="text" name="adsoyad" autocomplete="additional-name" placeholder="Baş harfi büyük yaz" required></td> <!--autocomplete: daha önceki veriler dikkate alınarak tamamlaması  -->
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" required>
+            </tr>
+            <tr>
+                <td> Öneri
+                    <td> <textarea name="öneri" id="" cols="40" rows="5"></textarea></td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <td>
+                        <input type="submit" name="gönder" > <input type="reset" name="reset" >
+                    </td>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
